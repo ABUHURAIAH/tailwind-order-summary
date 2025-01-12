@@ -1,28 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Order summary card</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-<body>
+    <title>Frontend Mentor | Order summary card</title>
 
-  Order Summary
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Global container -->
+    <div
+      class="bg-green-300 flex flex-col items-center h-screen justify-center"
+    >
+      <!-- Card Container -->
+      <div class="flex flex-col max-w-md rounded-xl overflow-hidden">
+        <!-- image -->
+        <div class="">
+          <img src="images/illustration-hero.svg" alt="illustration-hero" />
+        </div>
+        <!-- content -->
+        <div class="flex flex-col space-y-4 p-6 text-center bg-white">
+          <h1 class="text-2xl">Order Summary</h1>
+          <p class="text-lg">
+            You can now listen to millions of songs, audiobooks, and podcasts on
+            any device anywhere you like!
+          </p>
 
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
+          <div class="flex justify-between items-center">
+            <div class="flex space-x-4 items-center">
+              <img src="images/icon-music.svg" alt="" />
+              <div class="text-lg">Annual Plan $59.99/year</div>
+            </div>
+            <h2 class="text-xl">
+              Change
+            </h2>
+          </div>
 
-  Annual Plan
-  $59.99/year
+          <!-- button -->
+           <button class="text-white text-xl py-4 rounded-xl  bg-green-400">
+            Proceed to Payment
+           </button>
+           <!-- cancle -->
+           <button class=" text-xl py-4 rounded-xl  ">
+            Cancel order
+           </button>
 
-  Change
-
-  Proceed to Payment
-  Cancel Order
-</body>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
